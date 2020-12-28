@@ -10,5 +10,4 @@ public interface IIngresoDao {
     void Delete(Ingreso Entity);
     Ingreso GetById(int Id);
     List<Ingreso> GetAll();
-    List<Ingreso> FindAll();
 }
