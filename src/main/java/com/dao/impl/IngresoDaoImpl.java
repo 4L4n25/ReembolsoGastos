@@ -2,12 +2,14 @@ package com.dao.impl;
 
 import com.dao.IIngresoDao;
 import com.domain.Ingreso;
+import org.jinq.jpa.JPAJinqStream;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Repository
 @Transactional
@@ -21,26 +23,22 @@ private EntityManager IEntityManager;
 
     @Override
     public void Update(Ingreso Entity) {
-
+        IEntityManager.merge(Entity);
     }
 
     @Override
     public void Delete(Ingreso Entity) {
-
+        IEntityManager.remove((IEntityManager.contains(Entity)? Entity:IEntityManager.merge(Entity)));
     }
 
     @Override
     public Ingreso GetById(int Id) {
-        return null;
+        return IEntityManager.find(Ingreso.class, Id);
     }
 
     @Override
-    public List<Ingreso> GetAll() {
-        return null;
+    public List GetAll() {
+        return IEntityManager.createQuery("FROM Ingreso").getResultList();
     }
-
-    @Override
-    public List<Ingreso> FindAll() {
-        return null;
-    }
+    
 }
