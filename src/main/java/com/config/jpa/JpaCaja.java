@@ -15,7 +15,7 @@ import javax.sql.DataSource;
 import java.util.Properties;
 @Configuration
 @EnableTransactionManagement
-@EnableJpaRepositories(basePackages = "com.respository", entityManagerFactoryRef = "GastosEntityManager", transactionManagerRef = "GastosTransactionManager")
+@EnableJpaRepositories(basePackages = "com.service", entityManagerFactoryRef = "GastosEntityManager", transactionManagerRef = "GastosTransactionManager")
 public class JpaCaja {
     @Bean
     @Primary
