@@ -17,7 +17,7 @@ public class Ingreso {
     private Date fechaIngreso;
 
     @Column(name = "ingreso")
-    private float Ingreso;
+    private float ingreso;
 
     @Column(name = "descripcion")
     private String descripcion;
@@ -49,11 +49,11 @@ public class Ingreso {
     }
 
     public float getIngreso() {
-        return Ingreso;
+        return ingreso;
     }
 
     public void setIngreso(float ingreso) {
-        Ingreso = ingreso;
+        this.ingreso = ingreso;
     }
 
     public String getDescripcion() {

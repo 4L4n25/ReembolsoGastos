@@ -2,14 +2,13 @@ package com.dao.impl;
 
 import com.dao.IIngresoDao;
 import com.domain.Ingreso;
-import org.jinq.jpa.JPAJinqStream;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.List;
-import java.util.stream.Collectors;
+
 
 @Repository
 @Transactional
@@ -40,5 +39,5 @@ private EntityManager IEntityManager;
     public List GetAll() {
         return IEntityManager.createQuery("FROM Ingreso").getResultList();
     }
-    
+
 }
