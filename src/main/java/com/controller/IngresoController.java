@@ -34,7 +34,7 @@ public class IngresoController {
         JsonData.put("ingreso",AluLop.getIngreso());
         JsonData.put("descripcion",AluLop.getDescripcion());
         JsonData.put("cuenta",AluLop.getCuenta());
-        JsonDataList.add(JsonData)
+        JsonDataList.add(JsonData);
     }
     JsonStore.put("IngresoListJson", JsonDataList);
     return JsonStore;
