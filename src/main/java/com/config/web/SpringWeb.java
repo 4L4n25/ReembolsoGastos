@@ -32,6 +32,6 @@ public class SpringWeb extends WebMvcConfigurerAdapter {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry)
     {
-        registry.addResourceHandler("/resources/**","/app/**").addResourceLocations("/resource/");
+        registry.addResourceHandler("/resources/**","/app/**").addResourceLocations("/resources/");
     }
 }

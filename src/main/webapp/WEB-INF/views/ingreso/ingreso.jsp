@@ -15,6 +15,6 @@
     <script type="application/javascript" src="${pageContext.request.contextPath}/app/app.js"></script>
 </head>
 <body>
-
+aqui va la parte del ingresos
 </body>
 </html>
