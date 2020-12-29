@@ -9,7 +9,7 @@
 <html>
 <head>
     <title>Title</title>
-    <!--no se bien como funciona esto pero creo que tu si <3 :3 te toca la parte de que dice webapp alli va el front
+    <!--no se bien como funciona esto pero creo que tu si <3 te toca la parte de que dice webapp alli va el front :3
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/extjs/theme/classic/ext-theme-classic-all.css"/>
     <script type="application/javascript" src="${pageContext.request.contextPath}/resources/extjs/ext-all.js"></script>
     <script type="application/javascript" src="${pageContext.request.contextPath}/resources/extjs/ext-locale-es.js"></script>
