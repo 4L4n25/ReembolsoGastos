@@ -10,20 +10,20 @@ public class Ingreso {
 @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     @Column(name = "id_ingreso")
-    private int idIngreso;
+    private int idIngreso;//esto se jala al front
 
     @Temporal(TemporalType.DATE)
     @Column(name = "fecha_ingreso")
-    private Date fechaIngreso;
+    private Date fechaIngreso;//esto se jala al front
 
     @Column(name = "ingreso")
-    private float ingreso;
+    private float ingreso;//esto se jala al front
 
     @Column(name = "descripcion")
-    private String descripcion;
+    private String descripcion;//esto se jala al front
 
     @Column(name = "cuenta")
-    private String cuenta;
+    private String cuenta;//esto se jala al front
 
     public Ingreso() {
     }
