@@ -19,7 +19,7 @@ public class IngresoController {
     private IIngresoService IngresoService;
 
 @GetMapping
-    public JSONObject ListJson(@RequestParam int page,@RequestParam int start,@RequestParam int limit)
+public JSONObject ListJson(@RequestParam int page,@RequestParam int start,@RequestParam int limit)
 {
     List<IngresoDto> IngresoList = (List<IngresoDto>) IngresoService.GetAll();
     JSONObject JsonStore= new JSONObject();

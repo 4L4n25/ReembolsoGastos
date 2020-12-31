@@ -13,6 +13,10 @@
     <script type="application/javascript" src="${pageContext.request.contextPath}/resources/extjs/ext-all.js"></script>
     <script type="application/javascript" src="${pageContext.request.contextPath}/resources/extjs/ext-locale-es.js"></script>
     <script type="application/javascript" src="${pageContext.request.contextPath}/app/app.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--boostrap-->
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/bootstrap/css/bootstrap-theme.min.css">
 </head>
 <body>
 aquí va la parte del ingresos
