@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/bootstrap/css/bootstrap-theme.min.css">
 </head>
 <body>
+<a href="${pageContext.request.contextPath}/ingreso">ingreso</a>
 esta es la primer pagina haz lo que quieras
 </body>
 </html>
